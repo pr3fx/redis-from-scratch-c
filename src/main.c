@@ -10,7 +10,7 @@
 
 
 int main() {
-    char* ping_response = "+PONG\r\n";
+    char ping_response[7] = {'+', 'P', 'O', 'N', 'G', '\r', '\n'};
 
 	// Disable output buffering
 	setbuf(stdout, NULL);
